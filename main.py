@@ -103,7 +103,7 @@ def deregistrer_message(region, channel_name, records, account_id, retention):
         	  "short": "False"
 			},
             {
-        	  "title": "ID",
+        	  "title": "Creation Date",
         	  "value": creation_date,
         	  "short": "False"
 			}			   
@@ -166,7 +166,7 @@ def deregister_image(image_id, region):
 
 def finding_images_which_need_deregister(region, retention):
     output = []
-    register_date = datetime.datetime.utcnow().date() - datetime.timedelta(days=retention)
+    register_date = datetime.datetime.utcnow().date() - datetime.timedelta(days=int(retention))
     ec2 = boto3.client('ec2',region)
     ami_name = "Backup for *"
     images = ec2.describe_images(Filters=[
@@ -188,6 +188,7 @@ def lambda_handler(event, context):
     account_id = get_account_id()
     regions = get_all_regions()
     for region in regions:
+        print(region)
         instances = finding_ec2_with_needed_tag(region, 'backup')
         amies = []
         for instance in instances:
