@@ -196,7 +196,7 @@ def lambda_handler(event, context):
                 amies.append(ami)    
             print(amies)
         # print(instances)
-        if len(amies) >0:
+        if len(amies) > 0:
             registrer_message(region, slack_channel_name, instances, account_id)
         # Deregistration process
         deregistered = finding_images_which_need_deregister(region, retention)
