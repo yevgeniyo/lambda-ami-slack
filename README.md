@@ -1,4 +1,4 @@
-# Lambda AMI creator
+# AMI backup creator
 
 This project created for automating process of EC2 AMI`s creation.
 
