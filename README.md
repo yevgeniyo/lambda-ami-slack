@@ -35,3 +35,14 @@ This project created for automating process of EC2 AMI`s creation.
 
 - `pip install requests -t .`
 - `zip -r ../myDeploymentPackage.zip .`
+
+
+## Environment Variables
+
+- RETENTION
+- SLACK_CHANNEL_NAME
+- SLACK_WEBHOOK_URL
+
+## Slack output
+
+<img width="425" alt="Screen Shot 2020-06-23 at 16 03 06" src="https://user-images.githubusercontent.com/14246521/85408382-1e249c80-b56d-11ea-802f-4fee69f912cd.png">
