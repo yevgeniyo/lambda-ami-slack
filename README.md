@@ -1,5 +1,11 @@
 # Lambda AMI creator
 
+This project created for automating process of EC2 AMI`s creation.
+
+## Topology
+
+![Screen Shot 2020-06-23 at 15 57 39](https://user-images.githubusercontent.com/14246521/85406380-65f5f480-b56a-11ea-80a9-dd1df79f31ea.png)
+
 ## IAM
 
 ```
@@ -27,5 +33,5 @@
 
 ## Prepearing .zip
 
-- `pip install module-name -t .`
+- `pip install requests -t .`
 - `zip -r ../myDeploymentPackage.zip .`
