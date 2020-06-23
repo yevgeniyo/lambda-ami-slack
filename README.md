@@ -1,13 +1,8 @@
-pip install module-name -t .
-zip -r ../myDeploymentPackage.zip .
+# Lambda AMI creator
 
+## IAM
 
-
-
-
-IAM policy:
-
-{
+```{
     "Version": "2012-10-17",
     "Statement": [
         {
@@ -26,4 +21,9 @@ IAM policy:
             "Resource": "*"
         }
     ]
-}
+}```
+
+## Prepearing .zip
+
+`pip install module-name -t .`
+`zip -r ../myDeploymentPackage.zip .`
