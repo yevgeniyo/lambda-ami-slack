@@ -39,9 +39,9 @@ This project created for automating process of EC2 AMI`s creation.
 
 ## Environment Variables
 
-- `*RETENTION*`            -  number of days
-- `*SLACK_CHANNEL_NAME*`   -  name of slack channel where you want to get notifications
-- `*SLACK_WEBHOOK_URL*`    -  slack web hook URL
+- `RETENTION`            -  number of days
+- `SLACK_CHANNEL_NAME`   -  name of slack channel where you want to get notifications
+- `SLACK_WEBHOOK_URL`    -  slack web hook URL
 
 ## Slack output
 
