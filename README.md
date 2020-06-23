@@ -27,5 +27,5 @@
 
 ## Prepearing .zip
 
-`pip install module-name -t .`
-`zip -r ../myDeploymentPackage.zip .`
+- `pip install module-name -t .`
+- `zip -r ../myDeploymentPackage.zip .`
