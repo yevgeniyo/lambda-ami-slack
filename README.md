@@ -36,7 +36,6 @@ This project created for automating process of EC2 AMI`s creation.
 - `pip install requests -t .`
 - `zip -r ../myDeploymentPackage.zip .`
 
-
 ## Environment Variables
 
 - `RETENTION`            -  number of days
